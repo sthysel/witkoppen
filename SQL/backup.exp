@@ -1,0 +1,5 @@
+#!/usr/bin/expect -f
+spawn pg_dump -C -Fc -D -h localhost -U witkoppen -W -f /home/thys/Desktop/Witkoppen/PatientRecord.dat witkoppen
+expect "Password: "
+send witkoppen\r
+wait
